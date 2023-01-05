@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Formularz kontaktowy</h1>
+
+    <form action="https://formspree.io/f/mrgvglzw" method="post" style= "background-color: black; color: white; font-size: x-large; text-align: center;">
+
+        <!-- Imię i nazwisko -->
+        <label for="name">Imię i nazwisko:</label>
+        <input type="text" name="name" id="name" required placeholder="Jan Kowalski"><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" placeholder="pan@pani.pl"><br><br>
+
+        <!-- Telefon -->
+        <label for="phone">Numer telefonu:</label>
+        <input type="tel" name="phone" id="phone"><br><br>
+
+        <!-- Wybór miasta -->
+        <label for="city">Miasto:</label>
+        <select name="city" id="city">
+            <option value="Kraków">Kraków</option>
+            <option value="Warszawa" selected>Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
+        </select><br><br>
+
+        <!-- Wybór płci -->
+        
+        <label><input type="radio" name="sex" value="Mężczyzna">Mężczyzna</label><br>
+        <label><input type="radio" name="sex" value="Kobieta">Kobieta</label><br>
+        <label><input type="radio" name="sex" value="Inne">Inne</label><br><br>
+
+        <!-- Zgoda na dane osobowe -->
+        <label><input type="checkbox" name="agreement">Wyrażam zgodę na przejęcie danych</label><br><br>
+        
+        <!-- Pole wiadomości -->
+        <label>Poniżej opisz swoje żądania: <br><br>
+            <textarea name="message" maxlength="150" cols="50" rows="5" placeholder="Życie w luksusie i otoczeniu zapiekanek z tesco"></textarea></label><br>
+
+        <!-- Wyślij -->
+        <input type="submit" value="Wyślij formularz">
+
+    </form>
+
+    
+</body>
+</html>
