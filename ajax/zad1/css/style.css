@@ -1,0 +1,49 @@
+#dane-programisty {
+    margin-top: 20px;
+}
+
+@keyframes hyhy {
+    0% {
+        transform: rotate(0) scale(0.4);
+        border-radius: 0;
+        background-color: #ffea00;
+    }
+    25% {
+        transform: rotate(90deg) scale(2);
+        border-radius: 50%;
+        background-color: #66ff00;
+    }
+    50% {
+        transform: rotate(180deg) scale(0.2);
+        border-radius: 0;
+        background-color: #0022ff;
+    }
+    75% {
+        transform: rotate(270deg) scale(2);
+        border-radius: 50%;
+        background-color: #ff00ff;
+    }
+    100% {
+        transform: rotate(360deg) scale(0.4);
+        border-radius: 0;
+        background-color: #ff8000;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    font-size: 16px;
+    padding: 100px 26px;
+    cursor: pointer;
+    border: none;
+    animation: hyhy 4s linear infinite;
+}
+
+button:hover {
+    animation-play-state: paused;
+}
